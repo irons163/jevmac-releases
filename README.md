@@ -6,12 +6,14 @@
 
 **[下載最新版本](https://github.com/irons163/jevmac-releases/releases/latest)**
 
-1. 下載 Release 中的 `jevmac-v0.2.0-b3.zip` 並解壓。
+**Apple Silicon 與 Intel 使用同一份 Universal ZIP。** 同一個 App 包含 arm64 與 x86_64 架構。
+
+1. 下載最新 Release 中的 ZIP 安裝包並解壓。
 2. 將 `jevmac.app` 移至「應用程式」後開啟。
 3. 在 macOS「系統設定 → 隱私權與安全性 → 輔助使用」加入並啟用 jevmac。
 4. 在 App 的「唯讀工作台／API Key」儲存自己的 TypeSafe AI API Key，再切回「操作助手」選擇目標 App 與任務。
 
-需要 macOS 14 或更新版本；同一份 App 包含 Apple Silicon 與 Intel 架構。v0.2.0 已使用 Developer ID Application 簽章、通過 Apple 公證並附加票證，Gatekeeper 驗證通過。此為直接下載版本，非 Mac App Store 版本。
+需要 macOS 14 或更新版本。正式版本使用 Developer ID Application 簽章、通過 Apple 公證並附加票證，Gatekeeper 驗證通過。新版由 GitHub Actions 建置與發布；下載頁附有版本說明、`manifest.json` 與 `SHA256SUMS`，可核對建置來源及檔案完整性。此為直接下載版本。
 
 ## 操作與資料
 
@@ -21,6 +23,6 @@
 - 自動化範圍取決於目標 App 的 Accessibility 能力；遇到新視窗、缺少能力或不確定結果會停止或請求協助。
 - 不承諾任意 App 全自動完成。現有實機測試在 Apple Silicon 完成；獨立 Intel Mac 與全新使用者環境尚未完成實機測試。
 
-請勿在 Issues 貼上 API Key、Apple 密碼或私人畫面內容。詳細功能、驗證與限制請參閱各版本的 Release 說明。ZIP 附有 `THIRD_PARTY_NOTICES.txt`；Release 附有 `manifest.json` 與 `SHA256SUMS` 供核對。
+請勿在 Issues 貼上 API Key、Apple 密碼或私人畫面內容。詳細功能、驗證與限制請參閱各版本的 Release 說明。ZIP 附有 `THIRD_PARTY_NOTICES.txt`。
 
 此儲存庫只提供下載與版本說明。
